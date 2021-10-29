@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 export const Main = () => {
 
-    const myKey = '0b0e89c310d01c026b2c2018c5f693f6';
     const [weather, setWeather] = useState([{}])
     const [city, setCity] = useState("")
 
