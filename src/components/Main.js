@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 
 export const Main = () => {
 
-    const myKey = '0b0e89c310d01c026b2c2018c5f693f6';
     const [weather, setWeather] = useState([{}])
     const [city, setCity] = useState("")
 
     const getWeather = () => {
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${myKey}`).then(response => response.json()
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.REACT_APP_SECRET_NAME}`).then(response => response.json()
         ).then(data => setWeather(data))
     }
 
