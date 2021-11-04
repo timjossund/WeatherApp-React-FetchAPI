@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-require('dotenv').config();
-
 export const Main = () => {
 
     const [weather, setWeather] = useState([{}])
