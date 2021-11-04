@@ -8,7 +8,7 @@ export const Main = () => {
     const [city, setCity] = useState("")
 
     const getWeather = () => {
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.REACT_APP_APP_ID}`).then(response => response.json()
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${REACT_APP_APP_ID}`).then(response => response.json()
         ).then(data => setWeather(data))
     }
 
